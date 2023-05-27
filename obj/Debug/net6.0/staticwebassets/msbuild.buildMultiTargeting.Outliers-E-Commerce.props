@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Outliers-E-Commerce.props" />
+</Project>

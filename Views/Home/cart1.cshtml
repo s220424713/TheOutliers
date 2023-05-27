@@ -1,0 +1,299 @@
+﻿
+@{
+    Layout = "_Layout";
+}
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Food delivary Services | onlinemeals.com</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Gabriela&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (min-width:770px) and (max-width:1110px) " 
+    href="css/phone.css">
+    <link rel="stylesheet" media="screen and (max-width:769px) " href="css/phone2.css">
+</head>
+
+
+
+<style>
+*{
+			font-family: 'Patrick Hand SC', cursive;
+		}
+		.header{
+			padding: 20px;
+		}
+		.header > h1{
+			display: inline;
+    		padding: 15px;
+    		font-size: 48px;
+		}
+		.header > img{
+			width: 60px;
+		}
+		.prodHeight{
+			height: 300px;
+			margin: 10px;
+			box-sizing: border-box;
+			border: 1px solid;
+		}
+		div.prodPicture{
+			height: 200px;
+			text-align: center;
+		}
+		div.prodPicture > img{
+			padding-top: 25px;
+			width:150px;
+		}
+		div.prodInfo{
+			height: 50px;
+		}
+		.decrease,.increase,.remove{
+			cursor: pointer;
+			font-size: 20px;
+			border: 1px solid;
+    		padding: 4px;
+    		background-color: burlywood;
+		}
+		.container{
+			text-align: center;
+		}
+		div.row > div.col-md-3,div.col-md-6{
+			border: 1px solid;
+		}
+		div.row > div.col-md-6{
+			border-left: 0;
+			border-right: 0; 
+		}
+		#shopHead{
+			border: 2px dotted black;
+			font-size: 36px;
+		}
+		thead{
+			font-size: 28px;
+			text-align: center;
+		}
+</style>
+
+<div class="header">
+		<img src="http://i.imgrpost.com/imgr/2017/07/13/003-cart.png">
+		<h1>
+Handlevogn</h1>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 prodHeight">
+				<div class="prodPicture">
+					<img src="http://i.imgrpost.com/imgr/2017/07/13/001-smartphone.png">
+				</div>
+				<div class="prodInfo row">
+					<div class="col-md-6">
+						<h4>PRODUCT 1</h4>
+					</div>
+					<div class="col-md-6">
+						<h4>Rs.425</h4>
+					</div>
+				</div>
+				<button  id="prod1">ADD TO CART</button>
+			</div>
+			<div class="col-md-1"></div>
+			<div class="col-md-3 prodHeight">
+				<div class="prodPicture">
+					<img src="https://cdn3.iconfinder.com/data/icons/flat-icons-10/512/shirt_-_tie-512.png">
+				</div>
+				<div class="prodInfo row">
+					<div class="col-md-6">
+						<h4>PRODUCT 2</h4>
+					</div>
+					<div class="col-md-6">
+						<h4>Rs.225</h4>
+					</div>
+				</div>
+				<button  id="prod2">ADD TO CART</button>
+			</div>
+			<div class="col-md-1"></div>
+			<div class="col-md-3 prodHeight">
+				<div class="prodPicture">
+					<img src="https://cdn2.iconfinder.com/data/icons/technology-flat-icons/300/flat-camera-512.png">
+				</div>
+				<div class="prodInfo row">
+					<div class="col-md-6">
+						<h4>PRODUCT 3</h4>
+					</div>
+					<div class="col-md-6">
+						<h4>Rs.625</h4>
+					</div>
+				</div>
+				<button id="prod3">ADD TO CART</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3 prodHeight">
+				<div class="prodPicture">
+					<img src="https://cdn1.iconfinder.com/data/icons/technology-and-hardware-1/200/vector_264_03-01-512.png">
+				</div>
+				<div class="prodInfo row">
+					<div class="col-md-6">
+						<h4>PRODUCT 4</h4>
+					</div>
+					<div class="col-md-6">
+						<h4>Rs.1025</h4>
+					</div>
+				</div>
+				<button  id="prod4">ADD TO CART</button>
+			</div>
+			<div class="col-md-1"></div>
+			<div class="col-md-3 prodHeight">
+				<div class="prodPicture">
+					<img src="http://i.imgrpost.com/imgr/2017/07/13/002-programming.png">
+				</div>
+				<div class="prodInfo row">
+					<div class="col-md-6">
+						<h4>PRODUCT 5</h4>
+					</div>
+					<div class="col-md-6">
+						<h4>Rs.896</h4>
+					</div>
+				</div>
+				<button  id="prod5">ADD TO CART</button>
+			</div>
+			<div class="col-md-1"></div>
+			<div class="col-md-3 prodHeight">
+				<div class="prodPicture">
+					<img src="https://cdn0.iconfinder.com/data/icons/sports-and-fitness/512/shoes_running_sneakers_trainers_sport_footwear_fitness_run_marathon_sprint_athletic_healthy_exercise_shoe_workout_jogging_training_aerobic_fit_flat_design_icon-512.png">
+				</div>
+				<div class="prodInfo row">
+					<div class="col-md-6">
+						<h4>PRODUCT 6</h4>
+					</div>
+					<div class="col-md-6">
+						<h4>Rs.303</h4>
+					</div>
+				</div>
+				<button  id="prod6">ADD TO CART</button>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+	  <h2 id="shopHead">Shopping Cart</h2>
+	  <table class="table table-bordered">
+	    <thead>
+	      <tr>
+	        <th>NAME</th>
+	        <th>QUANTITY</th>
+	        <th>PRICE</th>
+	      </tr>
+	    </thead>
+	    <tbody id="cartEntry">
+	    </tbody>
+	  </table>
+	  <h4>TOTAL CHECKOUT PRICE IS:&nbsp;&nbsp;Rs. <span id="totalPrice">0</span></h4>
+	</div>
+
+
+<script>
+		var cart = [] ;
+var products = [{name: "PRODUCT 1",price: 425},{name: "PRODUCT 2",price: 225},{name: "PRODUCT 3",price: 625},
+{name: "PRODUCT 4", price:1025},{name: "PRODUCT 5",price: 896},{name: "PRODUCT 6",price: 303}];
+function refreshProducts(){
+	for (var i = 0; i < cart.length; i++) {
+		$("#prod"+(cart[i].index+1)).prop('disabled',true);
+		$("#prod"+(cart[i].index+1)).text('CHECK THE CART');
+	}
+}
+function retrieve(){
+	cart = JSON.parse(localStorage.getItem('cart')?localStorage.getItem('cart'):'[]');
+}
+function refreshCart(){
+	$('#cartEntry').html('');
+	var sum=0;
+	for (var i=0;i<cart.length;i++) {
+		sum+=cart[i].price;
+		var remove = $('<span class="remove">x</span>')
+		remove.attr("remove-id",i);
+		remove.attr("product-id",cart[i].index);
+		var decrease = $('<span class="decrease">-</span>')
+		decrease.attr("decrease-id",i);
+		decrease.attr("product-id",cart[i].index);
+		var increase = $('<span class="increase">+</span>')
+		increase.attr("increase-id",i);
+		increase.attr("product-id",cart[i].index);
+		var price = $('</td>'+'<td>'+cart[i].price+'</td>');
+		var product = $('<td>'+cart[i].name+'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>');
+		product.append(remove);
+		var quantity = $('<td>&nbsp;&nbsp;&nbsp;'+cart[i].qty+'&nbsp;&nbsp;&nbsp;</td>');
+		quantity.prepend(decrease);
+		quantity.append(increase);
+		var row = $('<tr></tr>');
+		row.append(product);
+		row.append(quantity);
+		row.append(price);
+		$('#cartEntry').append(row);
+	}
+	$('#totalPrice').text(sum);
+	$(".decrease").click(function(){
+		var cartPos = $(this).attr('decrease-id');
+		var productPos = $(this).attr('product-id');
+		var presentQty=cart[cartPos].qty;
+		var basePrice = products[productPos].price;
+		if(presentQty!=1)
+		{
+			cart[cartPos].qty=cart[cartPos].qty-1;
+			cart[cartPos].price=cart[cartPos].qty*basePrice;
+		}
+		saveCart();
+		refreshCart();
+	});
+	$(".increase").click(function(){
+		var cartPos = $(this).attr('increase-id');
+		var productPos = $(this).attr('product-id');
+		var presentQty=cart[cartPos].qty;
+		var basePrice = products[productPos].price;
+		if(presentQty < 5)
+		{
+			cart[cartPos].qty=cart[cartPos].qty+1;
+			cart[cartPos].price=cart[cartPos].qty*basePrice;
+		}
+		saveCart();
+		refreshCart();
+	});
+	$(".remove").click(function(){
+		var id=$(this).attr('remove-id');
+		var index =parseInt($(this).attr('product-id'));
+		var enableProduct=index+1;
+		$("#prod"+enableProduct).prop('disabled',false);
+		$("#prod"+enableProduct).text('ADD TO CART');
+		cart.splice(id,1);
+		saveCart();
+		refreshCart();
+		refreshProducts()
+	})
+}
+//saving the changes in the cart
+function saveCart(){
+	 localStorage.setItem('cart', JSON.stringify(cart));
+}
+$(function(){
+	retrieve();
+	refreshProducts();
+	refreshCart();
+	$('button').click(function(){
+		var id = $(this)[0].id;
+		var index = id[id.length-1]-1;
+		var details = products[index];
+		cart.push({
+			index: index,
+			name: details.name,
+			qty: 1,
+			price: details.price
+		});
+		refreshCart();
+		refreshProducts();
+		saveCart();
+	});
+});
+
+</script>
+

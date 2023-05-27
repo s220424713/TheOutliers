@@ -1,0 +1,42 @@
+﻿@model IEnumerable<Outliers_E_Commerce.Models.Employee>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_SalesLayout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ApplicationUser)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Departments)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ApplicationUser.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Departments.DepartID)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Employeeid">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Employeeid">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Employeeid">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

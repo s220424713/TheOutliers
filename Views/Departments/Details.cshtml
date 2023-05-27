@@ -1,0 +1,31 @@
+﻿@model Outliers_E_Commerce.Models.Departments
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_SalesLayout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Departments</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DepName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DepName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.DepartID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
